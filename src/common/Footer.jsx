@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router'
 import { MdLocationPin, MdEmail } from "react-icons/md";
 import { IoCall } from "react-icons/io5";
+import logo from '../../IMAGE/logo.jpeg';
 
 export default function Footer() {
   return (
@@ -56,16 +57,19 @@ export default function Footer() {
   <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
     <div className="md:flex md:justify-between">
       <div className="mb-6 md:mb-0">
-        <a href="https://flowbite.com/" className="flex items-center">
-          <img
-            src="https://flowbite.com/docs/images/logo.svg"
-            className="h-7 me-3"
-            alt="FlowBite Logo"
-          />
-          <span className="text-heading self-center text-2xl font-semibold whitespace-nowrap">
-            Flowbite
-          </span>
-        </a>
+        
+
+
+           <a href="/" className="flex items-center justify-center">
+                  <img
+                    src={logo}
+                    alt="Jankalyan Care Foundation logo"
+                    className="h-12 w-auto rounded-md object-contain sm:h-14 md:h-16"
+                  />
+                </a>
+
+
+
       </div>
       <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
         <div>
