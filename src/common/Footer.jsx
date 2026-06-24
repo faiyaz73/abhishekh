@@ -16,7 +16,7 @@ export default function Footer() {
               <h3 className='text-lg font-semibold text-slate-800'>Address</h3>
             </div>
             <p className='mt-4 text-sm leading-6 text-slate-600'>
-              Patna
+              Patna bihar
             </p>
           </div>
 
