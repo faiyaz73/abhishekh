@@ -1,13 +1,16 @@
 import { Link } from "react-router";
-import { FaHeartCircleBolt } from "react-icons/fa6";
-
+import logo from '../../IMAGE/logo.jpeg';
 
 export default function Topheader() {
   return (
     <header className="w-full border-b border-slate-200 bg-[#90fc14] shadow-sm">
       <div className="mx-auto flex max-w-7xl flex-col items-center gap-2 px-3 py-2 sm:px-4 sm:py-3 md:grid md:grid-cols-[auto_1fr_auto] md:gap-4 md:px-6 md:py-3">
         <a href="/" className="flex items-center justify-center">
-          <FaHeartCircleBolt className="text-2xl text-red-700 sm:text-3xl md:text-4xl" />
+          <img
+            src={logo}
+            alt="Jankalyan Care Foundation logo"
+            className="h-12 w-auto rounded-md object-contain sm:h-14 md:h-16"
+          />
         </a>
 
         <div className="text-center">
