@@ -253,9 +253,13 @@ export default function Home() {
 
             <div className="rounded border border-green-800 bg-[#55a900] p-2 shadow-lg">
               <div className="rounded bg-[#f6ffef] px-3 py-6 text-center text-sm leading-6 text-green-900">
-                <p>माँ यमुना में हुई नाविकों की ऐतिहासिक दौड़ इस पर क्या बोले नाविक सुनें</p>
+                <p>निःशुल्क स्वास्थ्य शिविर, रक्तदान शिविर और नेत्र परीक्षण
+ग्रामीण क्षेत्रों में मोबाइल हेल्थ वैन और दवाइयों की उपलब्धता
+महिलाओं और बच्चों के लिए पोषण कार्यक्रम</p>
                 <p className="mt-4 font-semibold">Aman Jan sewa Samiti</p>
-                <p className="mt-3">विश्व पर्यावरण दिवस के उपलक्ष्य मुख्य कार्यक्रम</p>
+                <p className="mt-3">वृक्षारोपण अभियान, स्वच्छता अभियान
+जल संरक्षण, प्लास्टिक-मुक्त अभियान
+ग्रामीण क्षेत्रों में सौर ऊर्जा या नवीकरणीय ऊर्जा को बढ़ावा</p>
                 <p className="mt-3 font-semibold uppercase">Aman Jan Sewa Samiti</p>
               </div>
             </div>
