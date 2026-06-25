@@ -13,7 +13,8 @@ import {
   FaWhatsapp,
   FaYoutube,
 } from 'react-icons/fa'
-import heroImage from '../assets/hero.png'
+import heroImage from '../assets/abhishekh ojha.jpeg'
+
 import { Link } from 'react-router'
 
 
@@ -88,7 +89,7 @@ const managementProfiles = [
   },
   {
     image: heroImage,
-    name: 'Sanjay Gupta',
+    name: 'Abhishekh Ojha',
     role: 'President',
   },
   {
