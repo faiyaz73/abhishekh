@@ -75,8 +75,8 @@ const memberProfiles = [
   },
   {
     image: heroImage,
-    name: 'Ritika Verma',
-    role: 'Supporter',
+    name: 'Seema maurya',
+    role: 'Director',
   },
 ]
 
