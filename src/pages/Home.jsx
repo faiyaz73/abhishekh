@@ -72,9 +72,9 @@ const memberProfiles = [
     role: 'Member',
   },
   {
-    image: '../../IMAGE/abhishekh ojha.jpeg',
+    image: '../assets/abhishekh ojha.jpeg',
     name: 'Abhishek ojha',
-    role: 'Volunteer',
+    role: 'Director',
   },
   {
     image: heroImage,
