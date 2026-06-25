@@ -467,7 +467,7 @@ export default function Home() {
             <div className="flex justify-center">
               <div className="flex h-48 w-48 items-center justify-center rounded-lg border border-green-100 bg-green-50 p-4 shadow-sm sm:h-56 sm:w-56">
                 <img
-                  src="../../IMAGE/Seema Maurya1.jpg"
+                  src={heroImage}
                   alt="Jan Kalyan Samiti logo"
                   className="h-full w-full object-contain"
                 />
