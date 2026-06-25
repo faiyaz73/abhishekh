@@ -179,7 +179,7 @@ export default function Home() {
 
   return (
     <main>
-      <section className="relative h-[80vh] min-h-[420px] w-full overflow-hidden bg-gray-900 sm:h-[85vh] lg:h-[92vh]">
+      <section className="relative h-[60vh] min-h-[380px] w-full overflow-hidden bg-gray-900 sm:h-[68vh] sm:min-h-[460px] lg:h-[620px] xl:h-[680px]">
         {slides.map((slide, index) => (
           <div
             key={`${slide.title}-${index}`}
@@ -190,7 +190,9 @@ export default function Home() {
             <img
               src={slide.image}
               alt={slide.title}
-              className="h-full w-full object-cover object-center"
+              className="h-700px w-full object-cover object-center lg:object-[center_35%]
+              pb-[30px]
+              "
             />
             <div className="absolute inset-0 bg-black/45" />
             <div className="absolute inset-0 flex items-center">
