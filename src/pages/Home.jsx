@@ -15,6 +15,8 @@ import {
 } from 'react-icons/fa'
 // import heroImage from '../assets/abhishekh ojha.jpeg'
 import heroImage from '../../IMAGE/image_2.png';
+// import heroImage from '../../IMAGE/image_3.png';
+
 
 import { Link } from 'react-router'
 
@@ -59,7 +61,7 @@ const activityTabs = [
 ]
 
 const galleryImages = [
-  '/jankalyan-logo.jpeg',
+  '../../IMAGE/image_3.png',
   heroImage,
   '/jankalyan-logo.jpeg',
 ]
