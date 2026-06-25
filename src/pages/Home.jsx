@@ -62,8 +62,7 @@ const activityTabs = [
 
 const galleryImages = [
   '../../IMAGE/image_3.png',
-  heroImage,
-  '/jankalyan-logo.jpeg',
+  heroImage,'../../IMAGE/image_2.png',
 ]
 
 const memberProfiles = [
