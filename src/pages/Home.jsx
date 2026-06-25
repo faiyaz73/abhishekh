@@ -13,7 +13,8 @@ import {
   FaWhatsapp,
   FaYoutube,
 } from 'react-icons/fa'
-import heroImage from '../assets/abhishekh ojha.jpeg'
+// import heroImage from '../assets/abhishekh ojha.jpeg'
+import heroImage from '../../IMAGE/image_2.png';
 
 import { Link } from 'react-router'
 
@@ -31,7 +32,7 @@ const slides = [
     subtitle: 'Naye members ke liye registration aur seva ka mauka.',
   },
   {
-    image: '/jankalyan-logo.jpeg',
+    image: '../assets/abhishekh ojha.jpeg',
     title: 'Donate for Welfare',
     subtitle: 'Aapka yogdan kisi zaruratmand ke liye umeed ban sakta hai.',
   },
