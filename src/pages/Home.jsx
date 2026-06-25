@@ -15,7 +15,7 @@ import {
 } from 'react-icons/fa'
 // import heroImage from '../assets/abhishekh ojha.jpeg'
 import heroImage from '../../IMAGE/image_2.png';
-// import heroImage from '../../IMAGE/image_3.png';
+import heroImageTwo from '../../IMAGE/image_3.png';
 
 
 import { Link } from 'react-router'
@@ -24,7 +24,7 @@ import { Link } from 'react-router'
 
 const slides = [
   {
-    image: '/jankalyan-logo.jpeg',
+    image: heroImageTwo,
     title: 'Jan Kalyan Samiti',
     subtitle: 'Samaj seva, sahyog aur badlav ke liye ek saath.',
   },
@@ -34,7 +34,7 @@ const slides = [
     subtitle: 'Naye members ke liye registration aur seva ka mauka.',
   },
   {
-    image: '../assets/abhishekh ojha.jpeg',
+    image: heroImageTwo,
     title: 'Donate for Welfare',
     subtitle: 'Aapka yogdan kisi zaruratmand ke liye umeed ban sakta hai.',
   },
@@ -178,18 +178,18 @@ export default function Home() {
 
   return (
     <main>
-      <section className="relative h-90 w-full overflow-hidden bg-gray-900 sm:h-107.5 lg:h-130">
+      <section className="relative h-[80vh] min-h-[420px] w-full overflow-hidden bg-gray-900 sm:h-[85vh] lg:h-[92vh]">
         {slides.map((slide, index) => (
           <div
             key={`${slide.title}-${index}`}
-            className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
+            className={`absolute inset-0 h-full w-full transition-opacity duration-700 ease-in-out ${
               activeSlide === index ? 'opacity-100' : 'opacity-0'
             }`}
           >
             <img
               src={slide.image}
               alt={slide.title}
-              className="h-full w-full object-cover"
+              className="h-full w-full object-cover object-center"
             />
             <div className="absolute inset-0 bg-black/45" />
             <div className="absolute inset-0 flex items-center">
