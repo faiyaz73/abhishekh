@@ -287,10 +287,10 @@ export default function Home() {
             ))}
 
             <div className="fixed left-0 top-1/2 z-30 hidden -translate-y-1/2 overflow-hidden rounded-r-lg shadow-lg md:block">
-              <a href="https://www.facebook.com/" className="flex h-8 w-8 items-center justify-center bg-blue-600 text-white" aria-label="Facebook">
+              <a href="https://www.facebook.com/profile.php?id=61575461521846" className="flex h-8 w-8 items-center justify-center bg-blue-600 text-white" aria-label="Facebook">
                 <FaFacebookF />
               </a>
-              <a href="https://www.youtube.com/" className="flex h-8 w-8 items-center justify-center bg-red-600 text-white" aria-label="YouTube">
+              <a href="https://www.youtube.com/@JankalyanCareFoundation" className="flex h-8 w-8 items-center justify-center bg-red-600 text-white" aria-label="YouTube">
                 <FaYoutube />
               </a>
               <a href="https://wa.me/" className="flex h-8 w-8 items-center justify-center bg-green-500 text-white" aria-label="WhatsApp">
