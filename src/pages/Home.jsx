@@ -14,6 +14,7 @@ import {
   FaYoutube,
 } from 'react-icons/fa'
 // import heroImage1 from '../assets/abhishekh ojha.jpeg'
+import abhishekhOjhaImage from '../assets/abhishekh ojha.jpeg'
 import heroImage from '../../IMAGE/image_2.png';
 import heroImageTwo from '../../IMAGE/image_3.png';
 
@@ -72,8 +73,8 @@ const memberProfiles = [
     role: 'Member',
   },
   {
-    image:"../assets/abhishekh ojha.jpeg",
-    name: 'Abhishek ojha',
+    image: abhishekhOjhaImage,
+    name: 'Abhishekh Ojha',
     role: 'Director',
   },
   {
@@ -90,7 +91,7 @@ const managementProfiles = [
     role: 'Computer Trainer',
   },
   {
-    image: heroImage,
+    image: abhishekhOjhaImage,
     name: 'Abhishekh Ojha',
     role: 'President',
   },
@@ -416,9 +417,9 @@ export default function Home() {
             <div className="flex justify-center">
               <div className="flex h-48 w-48 items-center justify-center rounded-lg border border-green-100 bg-green-50 p-4 shadow-sm sm:h-56 sm:w-56">
                 <img
-                  src="/jankalyan-logo.jpeg"
-                  alt="Jan Kalyan Samiti logo"
-                  className="h-full w-full object-contain"
+                  src={abhishekhOjhaImage}
+                  alt="Abhishekh Ojha"
+                  className="h-full w-full rounded object-cover"
                 />
               </div>
             </div>
@@ -753,4 +754,3 @@ function ProfilePanel({ label, data, to }) {
     </div>
   )
 }
-
