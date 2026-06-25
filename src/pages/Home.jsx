@@ -13,7 +13,7 @@ import {
   FaWhatsapp,
   FaYoutube,
 } from 'react-icons/fa'
-// import heroImage from '../assets/abhishekh ojha.jpeg'
+import heroImage from '../assets/abhishekh ojha.jpeg'
 import heroImage from '../../IMAGE/image_2.png';
 import heroImageTwo from '../../IMAGE/image_3.png';
 
