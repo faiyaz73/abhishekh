@@ -12,11 +12,13 @@ import {
   FaUsers,
   FaWhatsapp,
   FaYoutube,
+  FaInstagram
 } from 'react-icons/fa'
 // import heroImage1 from '../assets/abhishekh ojha.jpeg'
 import abhishekhOjhaImage from '../assets/abhishekh ojha.jpeg'
-import heroImage from '../../IMAGE/image_2.png';
+import heroImage from '../../IMAGE/Seema Maurya1.jpg';
 import heroImageTwo from '../../IMAGE/image_3.png';
+import heroImage1 from '../../IMAGE/image_2.png';
 
 
 import { Link } from 'react-router'
@@ -25,25 +27,25 @@ import { Link } from 'react-router'
 
 const slides = [
   {
-    image: heroImageTwo,
-    title: 'Jan Kalyan Samiti',
-    subtitle: 'Samaj seva, sahyog aur badlav ke liye ek saath.',
-  },
-  {
-    image: heroImage,
-    title: 'Member Apply',
-    subtitle: 'Naye members ke liye registration aur seva ka mauka.',
+    image: heroImage1,
+   
+   
   },
   {
     image: heroImageTwo,
-    title: 'Donate for Welfare',
-    subtitle: 'Aapka yogdan kisi zaruratmand ke liye umeed ban sakta hai.',
+   
+   
+  },
+  {
+    image: heroImageTwo,
+   
+   
   },
 ]
 
 const quickLinks = [
   {
-    title: 'Member Apply',
+   
     to: '/member_apply',
     image: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=500&q=80',
   },
@@ -198,17 +200,16 @@ export default function Home() {
             <div className="absolute inset-0 flex items-center">
               <div className="mx-auto w-full max-w-6xl px-6 text-white">
                 <div className="max-w-2xl">
-                  <p className="mb-3 inline-block rounded bg-green-600 px-4 py-1 text-sm font-semibold uppercase tracking-wide">
-                    Welcome
-                  </p>
+                 
                   <h1 className="text-3xl font-bold sm:text-5xl lg:text-6xl">
                     {slide.title}
                   </h1>
                   <p className="mt-4 max-w-xl text-base leading-7 text-gray-100 sm:text-xl">
                     {slide.subtitle}
                   </p>
-                  <button className="mt-7 rounded bg-green-600 px-6 py-3 font-semibold text-white shadow-lg transition hover:bg-green-700">
-                    Read More
+                  <button className="mt-[610px] rounded bg-green-600 px-6 py-3 font-semibold text-white shadow-lg transition hover:bg-green-700">
+                   
+                      Register Now 
                   </button>
                 </div>
               </div>
@@ -262,11 +263,11 @@ export default function Home() {
                 <p>निःशुल्क स्वास्थ्य शिविर, रक्तदान शिविर और नेत्र परीक्षण
 ग्रामीण क्षेत्रों में मोबाइल हेल्थ वैन और दवाइयों की उपलब्धता
 महिलाओं और बच्चों के लिए पोषण कार्यक्रम</p>
-                <p className="mt-4 font-semibold">Aman Jan sewa Samiti</p>
+                <p className="mt-4 font-semibold"> jankalyan care foundation</p>
                 <p className="mt-3">वृक्षारोपण अभियान, स्वच्छता अभियान
 जल संरक्षण, प्लास्टिक-मुक्त अभियान
 ग्रामीण क्षेत्रों में सौर ऊर्जा या नवीकरणीय ऊर्जा को बढ़ावा</p>
-                <p className="mt-3 font-semibold uppercase">Aman Jan Sewa Samiti</p>
+                <p className="mt-3 font-semibold uppercase"> jankalyan care foundation</p>
               </div>
             </div>
 
@@ -295,8 +296,11 @@ export default function Home() {
               <a href="https://www.youtube.com/@JankalyanCareFoundation" className="flex h-8 w-8 items-center justify-center bg-red-600 text-white" aria-label="YouTube">
                 <FaYoutube />
               </a>
-              <a href="https://wa.me/" className="flex h-8 w-8 items-center justify-center bg-green-500 text-white" aria-label="WhatsApp">
+              <a href="https://whatsapp.com/channel/0029VbCWTy14tRrjrw4AIj3K" className="flex h-8 w-8 items-center justify-center bg-green-500 text-white" aria-label="WhatsApp">
                 <FaWhatsapp />
+              </a>
+              <a href="https://www.instagram.com/jankalyancarefoundation/" className="flex h-8 w-8 items-center justify-center bg-red-500 text-white" aria-label="WhatsApp">
+                <FaInstagram />
               </a>
             </div>
           </aside>
@@ -463,7 +467,7 @@ export default function Home() {
             <div className="flex justify-center">
               <div className="flex h-48 w-48 items-center justify-center rounded-lg border border-green-100 bg-green-50 p-4 shadow-sm sm:h-56 sm:w-56">
                 <img
-                  src="/jankalyan-logo.jpeg"
+                  src="../../IMAGE/Seema Maurya1.jpg"
                   alt="Jan Kalyan Samiti logo"
                   className="h-full w-full object-contain"
                 />
@@ -477,9 +481,9 @@ export default function Home() {
 Dear Friends,
               </p>
               <p className="mt-3 text-base leading-8 text-gray-700">
-                t is with great pride and humility that I address you as the President of AMAN JAN SEWA SAMITI. Since our founding 2005, our organization has been driven by a simple yet profound belief: that every individual, regardless of circumstance, deserves the opportunity to thrive.
+                The is with great pride and humility that I address you as the President of  jankalyan care foundation. Since our founding 2005, our organization has been driven by a simple yet profound belief: that every individual, regardless of circumstance, deserves the opportunity to thrive.
 
-At AMAN JAN SEWA SAMITI, we are not just dreamers; we are doers. We roll up our sleeves and work tirelessly to turn our vision of a better world into reality. From providing access to education and healthcare to championing environmental sustainability and social justice, our efforts are guided by a deep commitment to making a meaningful difference in the lives of others.
+At  jankalyan care foundation, we are not just dreamers; we are doers. We roll up our sleeves and work tirelessly to turn our vision of a better world into reality. From providing access to education and healthcare to championing environmental sustainability and social justice, our efforts are guided by a deep commitment to making a meaningful difference in the lives of others.
 
 But we cannot do it alone. Our success is built on the support of passionate individuals like you—individuals...
                 <Link to='/about'>
