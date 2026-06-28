@@ -1,17 +1,42 @@
 import React from "react";
 
 export default function Donate() {
+  const qrCodeSrc = "/donation-qr.png";
+
+  const handleQrDownload = async () => {
+    try {
+      const response = await fetch(qrCodeSrc);
+
+      if (!response.ok) {
+        throw new Error("QR code file not found");
+      }
+
+      const blob = await response.blob();
+      const downloadUrl = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+
+      link.href = downloadUrl;
+      link.download = "jankalyan-donation-qr.png";
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      URL.revokeObjectURL(downloadUrl);
+    } catch (error) {
+      alert("QR code file public/donation-qr.png me add karein.");
+    }
+  };
+
   return (
-    <div className="min-h-screen bg-[#dce8c9] py-6 px-4">
+    <div className="min-h-screen bg-[#dce8c9] px-4 py-6">
       {/* Heading */}
       <div className="flex justify-center mb-5">
-        <button className="px-8 py-1 border border-green-700 rounded-md bg-[#edf5df] text-green-900 shadow">
+        <button className="rounded-md border border-green-700 bg-[#edf5df] px-8 py-1 text-green-900 shadow">
           Donate Form
         </button>
       </div>
 
       {/* Form Container */}
-      <div className="max-w-5xl mx-auto bg-[#efefef] border border-gray-500 rounded-md p-4 md:p-6">
+      <div className="mx-auto max-w-5xl rounded-md border border-gray-500 bg-[#efefef] p-4 md:p-6">
         <form>
           {/* Row 1 */}
           <div className="grid md:grid-cols-2 gap-4 border-b border-orange-400 pb-4">
@@ -22,7 +47,7 @@ export default function Donate() {
               <input
                 type="text"
                 placeholder="Full Name"
-                className="w-full border border-green-700 rounded px-3 py-2 outline-none"
+                className="w-full rounded border border-green-700 px-3 py-2 outline-none"
               />
             </div>
 
@@ -33,7 +58,7 @@ export default function Donate() {
               <input
                 type="tel"
                 placeholder="Mobile Number"
-                className="w-full border border-green-700 rounded px-3 py-2 outline-none"
+                className="w-full rounded border border-green-700 px-3 py-2 outline-none"
               />
             </div>
           </div>
@@ -47,7 +72,7 @@ export default function Donate() {
               <input
                 type="email"
                 placeholder="Email"
-                className="w-full border border-green-700 rounded px-3 py-2 outline-none"
+                className="w-full rounded border border-green-700 px-3 py-2 outline-none"
               />
             </div>
 
@@ -58,7 +83,7 @@ export default function Donate() {
               <input
                 type="text"
                 placeholder="Pancard Number"
-                className="w-full border border-green-700 rounded px-3 py-2 outline-none"
+                className="w-full rounded border border-green-700 px-3 py-2 outline-none"
               />
             </div>
           </div>
@@ -72,7 +97,7 @@ export default function Donate() {
             <textarea
               rows="3"
               placeholder="Address"
-              className="w-full border border-green-700 rounded px-3 py-2 outline-none resize-none"
+              className="w-full resize-none rounded border border-green-700 px-3 py-2 outline-none"
             ></textarea>
           </div>
 
@@ -83,7 +108,7 @@ export default function Donate() {
                 Photo (optional) :
               </label>
 
-              <label className="w-24 h-24 border rounded-md bg-white shadow flex flex-col items-center justify-center cursor-pointer">
+              <label className="flex h-24 w-24 cursor-pointer flex-col items-center justify-center rounded-md border bg-white shadow">
                 <span className="text-xl">+</span>
                 <span className="text-xs">Upload</span>
 
@@ -99,7 +124,7 @@ export default function Donate() {
               <input
                 type="number"
                 placeholder="Amount"
-                className="w-full border border-green-700 rounded px-3 py-2 outline-none"
+                className="w-full rounded border border-green-700 px-3 py-2 outline-none"
               />
             </div>
           </div>
@@ -112,9 +137,9 @@ export default function Donate() {
                 <h3 className="font-bold mb-2">Bank Details:</h3>
 
                 <p>STATE BANK OF INDIA, AGRA</p>
-                <p>A/c No.: 43380856490</p>
-                <p>IFSC: SBIN0001931</p>
-                <p>MICR Code: 282002008</p>
+                <p>A/c No.: 44925756083</p>
+                <p>IFSC: SBIN0004619</p>
+                <p>MICR Code: 226002030</p>
               </div>
             </div>
 
@@ -124,17 +149,18 @@ export default function Donate() {
                 UPI SCAN:
               </label>
 
-              <div className="border rounded-md bg-white p-3 w-fit shadow">
+              <div className="w-fit rounded-md border bg-white p-3 shadow">
                 <img
-                  src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=donation"
+                  src={qrCodeSrc}
                   alt="QR Code"
-                  className="w-40 h-40"
+                  className="h-40 w-40 object-contain"
                 />
               </div>
 
               <button
                 type="button"
-                className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded mt-3"
+                onClick={handleQrDownload}
+                className="mt-3 inline-flex rounded bg-blue-600 px-6 py-2 text-white transition hover:bg-blue-700"
               >
                 Download
               </button>
@@ -147,7 +173,7 @@ export default function Donate() {
               Payment Receipt Upload:
             </label>
 
-            <label className="w-24 h-24 border rounded-md bg-white shadow flex flex-col items-center justify-center cursor-pointer">
+            <label className="flex h-24 w-24 cursor-pointer flex-col items-center justify-center rounded-md border bg-white shadow">
               <span className="text-xl">+</span>
               <span className="text-xs">Upload</span>
 
@@ -159,7 +185,7 @@ export default function Donate() {
           <div className="text-center pt-5">
             <button
               type="submit"
-              className="bg-gradient-to-r from-red-500 to-orange-500 text-white font-semibold px-8 py-2 rounded-md shadow"
+              className="rounded-md bg-gradient-to-r from-red-500 to-orange-500 px-8 py-2 font-semibold text-white shadow"
             >
               DONATE
             </button>

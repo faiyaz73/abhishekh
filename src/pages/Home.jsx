@@ -19,6 +19,12 @@ import abhishekhOjhaImage from '../assets/abhishekh ojha.jpeg'
 import heroImage from '../../IMAGE/Seema Maurya1.jpg';
 import heroImageTwo from '../../IMAGE/image_3.png';
 import heroImage1 from '../../IMAGE/image_2.png';
+import Enviroment from '../../IMAGE/enviroment.jpg'
+import social_walfare from '../../IMAGE/social walfare.png'
+import Health_Research from '../../IMAGE/Health-Research.webp'
+import education_vs_training from '../../IMAGE/education_vs_training.jpg'
+import human_rights from '../../IMAGE/human_rights.jpg'
+
 
 
 import { Link } from 'react-router'
@@ -69,11 +75,7 @@ const galleryImages = [
 ]
 
 const memberProfiles = [
-  {
-    image: heroImage,
-    name: 'Pushpendra Sharma',
-    role: 'Member',
-  },
+ 
   {
     image: abhishekhOjhaImage,
     name: 'Abhishekh Ojha',
@@ -87,21 +89,20 @@ const memberProfiles = [
 ]
 
 const managementProfiles = [
-  {
-    image: '/jankalyan-logo.jpeg',
-    name: 'Rakhi',
-    role: 'Computer Trainer',
-  },
-  {
+   
+   {
     image: abhishekhOjhaImage,
     name: 'Abhishekh Ojha',
-    role: 'President',
+    role: 'Director',
   },
+
   {
-    image: '/jankalyan-logo.jpeg',
-    name: 'Neha Singh',
-    role: 'Coordinator',
-  },
+    image:heroImage,
+    name: 'Seema Maurya',
+    role: 'Director',
+  }
+ 
+
 ]
 
 const galleryItems = [
@@ -432,17 +433,40 @@ export default function Home() {
 
             <div>
               <h2 className="text-2xl font-bold text-gray-900 sm:text-3xl">
-                Jan Kalyan 
+                JanKalyan Care Foundation
               </h2>
               <p className="mt-4 text-base leading-8 text-gray-s700">
-                Jan Kalyan Samiti samajik seva, sahyog aur lok kalyan ke liye
-                kaam karne wali sanstha hai. Hamara uddeshya zaruratmand logo
-                tak sahayata pahunchana, members ko seva se jodna aur samaj me
-                sakaratmak badlav lana hai.
+                
+जन कल्याण केयर फाउंडेशन एक सामाजिक संस्था है, जिसका उद्देश्य समाज के हर वर्ग के लोगों के जीवन स्तर को बेहतर बनाना है। हमारा संगठन विशेष रूप से पर्यावरण संरक्षण, शिक्षा, सामाजिक सेवा और स्वास्थ्य सेवाओं के क्षेत्र में सक्रिय रूप से कार्य करता है।
+
+हमारा विश्वास है कि एक सशक्त और विकसित समाज का निर्माण तभी संभव है, जब हर व्यक्ति को समान अवसर, स्वच्छ वातावरण, बेहतर शिक्षा और उचित स्वास्थ्य सुविधाएं प्राप्त हों।
+
+<p><b>🌱 पर्यावरण (Environment)<br></br></b>
+
+हम पर्यावरण संरक्षण के लिए निरंतर प्रयासरत हैं। वृक्षारोपण अभियान, स्वच्छता जागरूकता कार्यक्रम और प्लास्टिक मुक्त समाज के लिए लोगों को प्रेरित करना हमारी प्रमुख पहल है।
+</p>
+<b>📚 शिक्षा (Education)</b><br></br>
+
+<p>शिक्षा के क्षेत्र में हमारा लक्ष्य जरूरतमंद बच्चों को गुणवत्तापूर्ण शिक्षा उपलब्ध कराना है। हम निशुल्क शिक्षा, पुस्तक वितरण और जागरूकता कार्यक्रमों के माध्यम से शिक्षा का प्रचार-प्रसार करते हैं।</p>
+<b>🤝 सामाजिक सेवा (Social Work)</b>
+<br></br>
+
+जन कल्याण केयर फाउंडेशन समाज के कमजोर और वंचित वर्गों के उत्थान के लिए कार्य करता है। हम विभिन्न सामाजिक अभियानों, राहत कार्यों और सहायता कार्यक्रमों के माध्यम से लोगों की मदद करते हैं।
+<br></br>
+<b>🏥 स्वास्थ्य (Medical)</b><br></br>
+
+हम स्वास्थ्य सेवाओं को सुलभ बनाने के लिए समय-समय पर मेडिकल कैंप, ब्लड डोनेशन कैंप और स्वास्थ्य जांच शिविर आयोजित करते हैं, ताकि हर व्यक्ति को बेहतर स्वास्थ्य सुविधाएं मिल सकें।
+
+
+---
+
+हमारा उद्देश्य
+हम एक ऐसे समाज का निर्माण करना चाहते हैं, जहां हर व्यक्ति स्वस्थ, शिक्षित और सुरक्षित जीवन जी सके।
+
+जन कल्याण केयर फाउंडेशन – “सेवा ही हमारा धर्म है”
               </p>
               <p className="mt-3 text-base leading-8 text-gray-700">
-                Aap member apply, donation, events aur gallery ke madhyam se
-                hamare karya ke baare me adhik jankari prapt kar sakte hain.
+                
                 <Link to='/about'>
                 <button
                 className='bg-green-500 px-4 text-amber-50 rounded-2xl border-2 align-middle flex justify-end mt-5' 
@@ -458,7 +482,7 @@ export default function Home() {
           <div className="mb-8 flex justify-center">
             <Link to='/about'>
             <button className="rounded bg-green-600 px-4 py-1 text-lg font-semibold text-white shadow-md transition hover:bg-green-700">
-            Secretary Message
+            Director  Message
             </button>
           </Link>
           </div>
@@ -481,11 +505,36 @@ export default function Home() {
 Dear Friends,
               </p>
               <p className="mt-3 text-base leading-8 text-gray-700">
-                The is with great pride and humility that I address you as the President of  jankalyan care foundation. Since our founding 2005, our organization has been driven by a simple yet profound belief: that every individual, regardless of circumstance, deserves the opportunity to thrive.
+             मुझे अत्यंत गर्व है कि जनकल्याण केयर फाउंडेशन समाज के सर्वांगीण विकास के लिए निरंतर समर्पित भाव से कार्य कर रहा है। हमारा उद्देश्य केवल सहायता प्रदान करना नहीं, बल्कि लोगों को आत्मनिर्भर, जागरूक और सशक्त बनाना है।
 
-At  jankalyan care foundation, we are not just dreamers; we are doers. We roll up our sleeves and work tirelessly to turn our vision of a better world into reality. From providing access to education and healthcare to championing environmental sustainability and social justice, our efforts are guided by a deep commitment to making a meaningful difference in the lives of others.
+हमारी संस्था पर्यावरण संरक्षण, शिक्षा, सामाजिक सेवा और स्वास्थ्य सेवाओं के क्षेत्र में सक्रिय भूमिका निभा रही है। हम मानते हैं कि समाज के विकास के लिए हर व्यक्ति की भागीदारी आवश्यक है, इसलिए हम अधिक से अधिक लोगों को इस नेक कार्य में जुड़ने के लिए प्रेरित करते हैं।
 
-But we cannot do it alone. Our success is built on the support of passionate individuals like you—individuals...
+शिक्षा के क्षेत्र में हम जरूरतमंद एवं वंचित बच्चों को गुणवत्तापूर्ण शिक्षा उपलब्ध कराने का प्रयास करते हैं, ताकि वे अपने भविष्य को उज्जवल बना सकें। सामाजिक कार्यों के माध्यम से हम समाज के कमजोर वर्गों को सहयोग प्रदान कर उन्हें मुख्यधारा से जोड़ने का कार्य करते हैं।
+
+स्वास्थ्य सेवाओं के अंतर्गत हमारी टीम समय-समय पर मेडिकल कैंप, हेल्थ चेकअप शिविर और जागरूकता कार्यक्रम आयोजित करती है, जिससे लोगों को बेहतर स्वास्थ्य सुविधाएं मिल सकें।
+
+हमारा विश्वास है कि छोटे-छोटे प्रयास मिलकर बड़े बदलाव लाते हैं। मैं आप सभी से आग्रह करता हूं कि इस पहल में हमारे साथ जुड़ें और समाज के उत्थान में अपना महत्वपूर्ण योगदान दें।
+
+“आइए, मिलकर एक स्वस्थ, शिक्षित और सशक्त समाज का निर्माण करें।”
+
+धन्यवाद।
+
+
+
+
+प्रिय साथियों,
+
+जन कल्याण केयर फाउंडेशन समाज के हर वर्ग के जीवन स्तर को बेहतर बनाने के लिए समर्पित है। हम पर्यावरण संरक्षण, शिक्षा, सामाजिक सेवा और स्वास्थ्य के क्षेत्र में निरंतर कार्य कर रहे हैं।
+
+हमारा लक्ष्य एक ऐसा समाज बनाना है, जहां हर व्यक्ति को स्वच्छ वातावरण, बेहतर शिक्षा और उचित स्वास्थ्य सुविधाएं मिल सकें। वृक्षारोपण, शिक्षा सहायता, सामाजिक सहयोग और मेडिकल कैंप जैसे कार्यों के माध्यम से हम इस दिशा में प्रयासरत हैं।
+
+आइए, हम सब मिलकर एक स्वस्थ, शिक्षित और सशक्त समाज के निर्माण में अपना योगदान दें।
+
+धन्यवाद।
+
+सीमा मौर्या 
+डायरेक्टर
+जन कल्याण केयर फाउंडेशनअगर
                 <Link to='/about'>
                 <button
                 className='bg-green-500 px-4 text-amber-50 rounded-2xl border-2 align-middle flex justify-end mt-5' 
@@ -515,7 +564,7 @@ But we cannot do it alone. Our success is built on the support of passionate ind
             >
               <img
                 className='h-64 w-full object-cover transition duration-500 group-hover:scale-105'
-                src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2RgoNrHq5hpbqCfDLHT40jaHr65jZK9ciKA&s'
+                src={Enviroment}
                 alt='Environment'
               />
               <div className='absolute inset-0 bg-linear-to-t from-black/75 via-black/25 to-transparent' />
@@ -530,7 +579,7 @@ But we cannot do it alone. Our success is built on the support of passionate ind
             >
               <img
                 className='h-64 w-full object-cover transition duration-500 group-hover:scale-105'
-                src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2RgoNrHq5hpbqCfDLHT40jaHr65jZK9ciKA&s'
+                src={social_walfare}
                 alt='Social Welfare'
               />
               <div className='absolute inset-0 bg-linear-to-t from-black/75 via-black/25 to-transparent' />
@@ -545,7 +594,7 @@ But we cannot do it alone. Our success is built on the support of passionate ind
             >
               <img
                 className='h-64 w-full object-cover transition duration-500 group-hover:scale-105'
-                src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2RgoNrHq5hpbqCfDLHT40jaHr65jZK9ciKA&s'
+                src={Health_Research}
                 alt='Health & Research'
               />
               <div className='absolute inset-0 bg-linear-to-t from-black/75 via-black/25 to-transparent' />
@@ -560,7 +609,7 @@ But we cannot do it alone. Our success is built on the support of passionate ind
             >
               <img
                 className='h-64 w-full object-cover transition duration-500 group-hover:scale-105'
-                src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2RgoNrHq5hpbqCfDLHT40jaHr65jZK9ciKA&s'
+                src={education_vs_training}
                 alt='Education & Training'
               />
               <div className='absolute inset-0 bg-linear-to-t from-black/75 via-black/25 to-transparent' />
@@ -575,7 +624,7 @@ But we cannot do it alone. Our success is built on the support of passionate ind
             >
               <img
                 className='h-64 w-full object-cover transition duration-500 group-hover:scale-105'
-                src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2RgoNrHq5hpbqCfDLHT40jaHr65jZK9ciKA&s'
+                src={human_rights}
                 alt='Human Rights'
               />
               <div className='absolute inset-0 bg-linear-to-t from-black/75 via-black/25 to-transparent' />

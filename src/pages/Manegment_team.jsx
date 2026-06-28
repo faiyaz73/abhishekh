@@ -7,7 +7,7 @@ const managementMembers = [
   {
     image: abhishekhOjhaImage,
     name: 'Abhishekh Ojha',
-    title: 'President',
+    title: 'Director',
     phone: '+91 98765 43210',
     email: 'abhishekh@jankalyan.org',
   },

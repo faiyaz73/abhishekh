@@ -1,5 +1,57 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../common/Header";
+
+function AadhaarField() {
+  const [aadharPreview, setAadharPreview] = useState(null);
+  const [aadharNumber, setAadharNumber] = useState("");
+
+  const handleAadharUpload = (e) => {
+    const file = e.target.files && e.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = () => setAadharPreview(reader.result);
+      reader.readAsDataURL(file);
+    } else {
+      setAadharPreview(null);
+    }
+  };
+
+  return (
+    <div className="md:col-span-2">
+      <label className="block mb-2 font-medium">Upload Aadhaar Card (image)</label>
+      <input
+        type="file"
+        accept="image/*"
+        onChange={handleAadharUpload}
+        className="w-full border border-gray-300 rounded-lg px-4 py-2"
+      />
+
+      {aadharPreview && (
+        <div className="mt-4 flex flex-col items-center space-y-3">
+          <img src={aadharPreview} alt="Aadhaar preview" className="w-56 md:w-40 h-auto rounded-md border" />
+          <div className="text-center">
+            <div className="font-medium">Aadhaar Preview</div>
+          </div>
+        </div>
+      )}
+
+      <label className="block mt-4 mb-2 font-medium">Aadhaar Number</label>
+      <input
+        type="text"
+        value={aadharNumber}
+        onChange={(e) => setAadharNumber(e.target.value)}
+        placeholder="Enter Aadhaar Number"
+        className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500"
+      />
+
+      {aadharPreview && (
+        <div className="mt-2 text-center text-sm text-gray-600">
+          Entered number: <span className="font-semibold text-green-700">{aadharNumber || "—"}</span>
+        </div>
+      )}
+    </div>
+  );
+}
 
 export default function Member_Apply() {
   return (
@@ -15,6 +67,7 @@ export default function Member_Apply() {
           </p>
 
           <form className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* local state and handlers for Aadhaar upload */}
             
             {/* Full Name */}
             <div>
@@ -136,17 +189,8 @@ export default function Member_Apply() {
               />
             </div>
 
-            {/* Aadhaar */}
-            <div>
-              <label className="block mb-2 font-medium">
-                Aadhaar Number
-              </label>
-              <input
-                type="text"
-                placeholder="Enter Aadhaar Number"
-                className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500"
-              />
-            </div>
+            {/* Aadhaar Number (with state) */}
+            <AadhaarField />
 
             {/* Photo Upload */}
             <div className="md:col-span-2">
