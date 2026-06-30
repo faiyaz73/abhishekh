@@ -4,6 +4,7 @@ import { galleryImages } from "./PhotoGallery.js";
 
 
 
+
 export default function PhotoGallery() {
   return (
     <div className="min-h-screen bg-[#dce8c9] py-8">
