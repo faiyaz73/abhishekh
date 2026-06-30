@@ -9,14 +9,14 @@ const managementMembers = [
     name: 'Abhishekh Ojha',
     title: 'President',
     phone: '+91 7859810811',
-    email: 'jankalyancarefoundation@gmail.com',
+    email: 'jankalyancarefoundation@...',
   },
   {
     image: seemaMauryaImage,
     name: 'Seema Maurya',
     title: 'Director',
     phone: '+91 98765 43211',
-    email: 'jankalyancarefoundation@gmail.com',
+    email: 'jankalyancarefoundation@...',
   },
  
   
@@ -26,28 +26,28 @@ const managementMembers = [
     name: 'Abhishekh Ojha',
     title: 'Treasurer',
     phone: '+91 7859810811',
-    email: 'jankalyancarefoundation@gmail.com',
+    email: 'jankalyancarefoundation@...',
   },
    {
     image: seemaMauryaImage,
     name: 'Seema Maurya',
     title: 'Member',
     phone: '+91 98765 43214',
-    email: 'jankalyancarefoundation@gmail.com',
+    email: 'jankalyancarefoundation@...',
   },
   {
     image: seemaMauryaImage,
     name: 'Seema Maurya',
     title: 'Member',
     phone: '+91 98765 43214',
-    email: 'jankalyancarefoundation@gmail.com',
+    email: 'jankalyancarefoundation@...',
   },
   {
     image: abhishekhOjhaImage,
     name: 'Abhishekh Ojha',
     title: 'Treasurer',
     phone: '+917859810811',
-    email: 'jankalyancarefoundation@gmail.com',
+    email: 'jankalyancarefoundation@...',
   },
 ]
 
@@ -94,13 +94,13 @@ export default function Team_Member() {
           </div>
         </div>
 
-        <div className="mt-10 grid gap-6 sm:grid-cols-2 xl:grid-cols-4 auto-rows-fr">
+        <div className="mt-10 grid auto-rows-fr gap-6 sm:grid-cols-2 xl:grid-cols-4">
           {filteredMembers.map((member) => (
             <article
               key={member.email}
               className="flex h-full flex-col rounded-2xl border border-green-100 bg-[#59A404] p-5 text-center shadow-[0_12px_28px_rgba(58,120,0,0.18)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_18px_34px_rgba(58,120,0,0.28)]"
             >
-              <div className="mx-auto h-48 w-full max-w-52 overflow-hidden rounded-2xl border-4 border-white bg-green-50">
+              <div className="mx-auto h-48 w-full max-w-52 shrink-0 overflow-hidden rounded-2xl border-4 border-white bg-green-50">
                 <img
                   src={member.image}
                   alt={member.name}
@@ -108,28 +108,28 @@ export default function Team_Member() {
                 />
               </div>
 
-              <div className="mt-4 flex flex-1 flex-col justify-between min-w-0">
-                <div>
+              <div className="mt-4 flex flex-1 flex-col items-center justify-between min-w-0">
+                <div className="w-full">
                   <h2 className="text-lg font-bold text-white">{member.name}</h2>
                   <p className="mt-2 inline-block rounded-full bg-white px-3 py-1 text-sm font-semibold text-[#347000]">
                     {member.title}
                   </p>
                 </div>
 
-                <div className="mt-4 space-y-2 text-sm text-white">
+                <div className="mt-4 w-full space-y-2 text-sm text-white">
                   <a
                     href={`tel:${member.phone.replace(/\s/g, '')}`}
-                    className="flex items-center justify-center gap-2 break-all transition hover:text-green-100"
+                    className="flex w-full items-center justify-center gap-2 break-all transition hover:text-green-100"
                   >
-                    <FaPhoneAlt className="shrink-0 text-white" />
+                    <FaPhoneAlt className="h-4 w-4 shrink-0 text-white" />
                     <span>{member.phone}</span>
                   </a>
                   <a
                     href={`mailto:${member.email}`}
-                    className="flex items-center justify-center gap-2 break-all text-center transition hover:text-green-100"
+                    className="flex w-full items-center justify-center gap-2 text-center transition hover:text-green-100"
                   >
-                    <FaEnvelope className="shrink-0 text-white" />
-                    <span className="min-w-0 truncate text-center">{member.email}</span>
+                    <FaEnvelope className="h-4 w-4 shrink-0 text-white" />
+                    <span className="min-w-0 break-all leading-snug">{member.email}</span>
                   </a>
                 </div>
               </div>
