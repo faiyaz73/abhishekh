@@ -136,10 +136,11 @@ export default function Donate() {
               <div className="bg-green-600 text-white p-4 rounded-md shadow-md max-w-sm">
                 <h3 className="font-bold mb-2">Bank Details:</h3>
 
-                <p>STATE BANK OF INDIA, AGRA</p>
-                <p>A/c No.: 44925756083</p>
-                <p>IFSC: SBIN0004619</p>
-                <p>MICR Code: 226002030</p>
+                <span><b>Bank Name : </b>  State Bank Of India</span><br></br>
+                <span><b>Name : </b>Jankalyan care foundation</span><br></br>
+                <span><b>A/c No : </b>44925756083</span><br></br>
+                <span><b>IFSC: </b>SBIN0004619</span><br></br>
+                <span><b>MICR Code:</b>    226002030</span><br></br>
               </div>
             </div>
 

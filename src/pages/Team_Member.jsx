@@ -8,57 +8,46 @@ const managementMembers = [
     image: abhishekhOjhaImage,
     name: 'Abhishekh Ojha',
     title: 'President',
-    phone: '+91 98765 43210',
-    email: 'abhishekh@jankalyan.org',
+    phone: '+91 7859810811',
+    email: 'jankalyancarefoundation@gmail.com',
   },
   {
     image: seemaMauryaImage,
     name: 'Seema Maurya',
     title: 'Director',
     phone: '+91 98765 43211',
-    email: 'seema@jankalyan.org',
+    email: 'jankalyancarefoundation@gmail.com',
   },
-  {
-    image: '/jankalyan-logo.jpeg',
-    name: 'Rakhi',
-    title: 'Computer Trainer',
-    phone: '+91 98765 43212',
-    email: 'rakhi@jankalyan.org',
-  },
-  {
-    image: '/jankalyan-logo.jpeg',
-    name: 'Neha Singh',
-    title: 'Coordinator',
-    phone: '+91 98765 43213',
-    email: 'neha@jankalyan.org',
-  },
+ 
+  
+ 
   {
     image: abhishekhOjhaImage,
-    name: 'Pushpendra Sharma',
+    name: 'Abhishekh Ojha',
+    title: 'Treasurer',
+    phone: '+91 7859810811',
+    email: 'jankalyancarefoundation@gmail.com',
+  },
+   {
+    image: seemaMauryaImage,
+    name: 'Seema Maurya',
     title: 'Member',
     phone: '+91 98765 43214',
-    email: 'pushpendra@jankalyan.org',
+    email: 'jankalyancarefoundation@gmail.com',
   },
   {
     image: seemaMauryaImage,
-    name: 'Anita Verma',
+    name: 'Seema Maurya',
+    title: 'Member',
+    phone: '+91 98765 43214',
+    email: 'jankalyancarefoundation@gmail.com',
+  },
+  {
+    image: abhishekhOjhaImage,
+    name: 'Abhishekh Ojha',
     title: 'Treasurer',
-    phone: '+91 98765 43215',
-    email: 'anita@jankalyan.org',
-  },
-  {
-    image: '/jankalyan-logo.jpeg',
-    name: 'Rahul Singh',
-    title: 'Volunteer Head',
-    phone: '+91 98765 43216',
-    email: 'rahul@jankalyan.org',
-  },
-  {
-    image: '/jankalyan-logo.jpeg',
-    name: 'Pooja Gupta',
-    title: 'Office Manager',
-    phone: '+91 98765 43217',
-    email: 'pooja@jankalyan.org',
+    phone: '+917859810811',
+    email: 'jankalyancarefoundation@gmail.com',
   },
 ]
 
@@ -105,13 +94,13 @@ export default function Team_Member() {
           </div>
         </div>
 
-        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 xl:grid-cols-4 auto-rows-fr">
           {filteredMembers.map((member) => (
             <article
               key={member.email}
-              className="rounded border border-white/70 bg-[#59A404] p-4 text-center shadow-[0_10px_25px_rgba(255,255,255,0.85)] transition hover:-translate-y-1 hover:shadow-[0_14px_32px_rgba(255,255,255,0.95)]"
+              className="flex h-full flex-col rounded-2xl border border-green-100 bg-[#59A404] p-5 text-center shadow-[0_12px_28px_rgba(58,120,0,0.18)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_18px_34px_rgba(58,120,0,0.28)]"
             >
-              <div className="mx-auto h-40 w-full max-w-44 overflow-hidden rounded border-4 border-white bg-green-50">
+              <div className="mx-auto h-48 w-full max-w-52 overflow-hidden rounded-2xl border-4 border-white bg-green-50">
                 <img
                   src={member.image}
                   alt={member.name}
@@ -119,26 +108,28 @@ export default function Team_Member() {
                 />
               </div>
 
-              <div className="mt-4 min-w-0">
-                <h2 className="text-lg font-bold text-white">{member.name}</h2>
-                <p className="mt-1 inline-block rounded bg-white px-3 py-1 text-sm font-semibold text-[#347000]">
-                  {member.title}
-                </p>
+              <div className="mt-4 flex flex-1 flex-col justify-between min-w-0">
+                <div>
+                  <h2 className="text-lg font-bold text-white">{member.name}</h2>
+                  <p className="mt-2 inline-block rounded-full bg-white px-3 py-1 text-sm font-semibold text-[#347000]">
+                    {member.title}
+                  </p>
+                </div>
 
                 <div className="mt-4 space-y-2 text-sm text-white">
                   <a
                     href={`tel:${member.phone.replace(/\s/g, '')}`}
-                    className="flex items-center justify-center gap-2 transition hover:text-green-100"
+                    className="flex items-center justify-center gap-2 break-all transition hover:text-green-100"
                   >
-                    <FaPhoneAlt className="text-white" />
+                    <FaPhoneAlt className="shrink-0 text-white" />
                     <span>{member.phone}</span>
                   </a>
                   <a
                     href={`mailto:${member.email}`}
-                    className="flex items-center justify-center gap-2 break-all transition hover:text-green-100"
+                    className="flex items-center justify-center gap-2 break-all text-center transition hover:text-green-100"
                   >
                     <FaEnvelope className="shrink-0 text-white" />
-                    <span>{member.email}</span>
+                    <span className="min-w-0 truncate text-center">{member.email}</span>
                   </a>
                 </div>
               </div>

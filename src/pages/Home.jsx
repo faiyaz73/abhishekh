@@ -18,6 +18,7 @@ import {
 import abhishekhOjhaImage from '../assets/abhishekh ojha.jpeg'
 import heroImage from '../../IMAGE/Seema Maurya1.jpg';
 import heroImageTwo from '../../IMAGE/image_3.png';
+import heroImageThree from '../../IMAGE/image_4.png';
 import heroImage1 from '../../IMAGE/image_2.png';
 import Enviroment from '../../IMAGE/enviroment.jpg'
 import social_walfare from '../../IMAGE/social walfare.png'
@@ -33,17 +34,17 @@ import { Link } from 'react-router'
 
 const slides = [
   {
-    image: heroImage1,
+  
+   image:heroImage1,
+   
+  },
+  {
+    image:heroImageTwo,
    
    
   },
   {
-    image: heroImageTwo,
-   
-   
-  },
-  {
-    image: heroImageTwo,
+    image:heroImageThree,
    
    
   },
@@ -90,11 +91,11 @@ const memberProfiles = [
 
 const managementProfiles = [
    
-   {
-    image: abhishekhOjhaImage,
-    name: 'Abhishekh Ojha',
-    role: 'Director',
-  },
+  //  {
+  //   image:heroImage,
+  //   name: 'Abhishekh Ojha',
+  //   role: 'Director',
+  // },
 
   {
     image:heroImage,
