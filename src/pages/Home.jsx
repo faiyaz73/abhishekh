@@ -17,7 +17,7 @@ import {
 // import heroImage1 from '../assets/abhishekh ojha.jpeg'
 import abhishekhOjhaImage from '../assets/abhishekh ojha.jpeg'
 import heroImage from '../../IMAGE/Seema Maurya1.jpg';
-import heroImageTwo from '../../IMAGE/image_3.png';
+// import heroImageTwo from '../../IMAGE/image_3.png';
 import heroImageThree from '../../IMAGE/image_4.png';
 import heroImage1 from '../../IMAGE/image_2.png';
 import Enviroment from '../../IMAGE/enviroment.jpg'
@@ -36,11 +36,6 @@ const slides = [
   {
   
    image:heroImage1,
-   
-  },
-  {
-    image:heroImageTwo,
-   
    
   },
   {

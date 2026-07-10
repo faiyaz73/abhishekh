@@ -33,7 +33,7 @@ export default function UpComming() {
                 </p>
 
                 <p>
-                  <span className="font-semibold">Date -</span> June 5, 2025
+                  <span className="font-semibold">Date -</span> June 5, 2026
                 </p>
               </div>
 
