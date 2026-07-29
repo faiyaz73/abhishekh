@@ -111,9 +111,33 @@ export default function Donate() {
               <label className="flex h-24 w-24 cursor-pointer flex-col items-center justify-center rounded-md border bg-white shadow">
                 <span className="text-xl">+</span>
                 <span className="text-xs">Upload</span>
-
                 <input type="file" className="hidden" />
               </label>
+             
+            </div>
+            <div>
+              <label className="block text-sm font-medium mb-2">
+              Back Adhar Card (Optional) : 
+              </label>
+
+              <label className="flex h-24 w-24 cursor-pointer flex-col items-center justify-center rounded-md border bg-white shadow">
+                <span className="text-xl">+</span>
+                <span className="text-xs">Back</span>
+                <input type="file" className="hidden" />
+              </label>
+             
+            </div>
+            <div>
+              <label className="block text-sm font-medium mb-2">
+               Front Adhar Card (Optional) : 
+              </label>
+
+              <label className="flex h-24 w-24 cursor-pointer flex-col items-center justify-center rounded-md border bg-white shadow">
+                <span className="text-xl">+</span>
+                <span className="text-xs">Front</span>
+                <input type="file" className="hidden" />
+              </label>
+             
             </div>
 
             <div>

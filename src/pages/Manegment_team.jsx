@@ -5,32 +5,28 @@ import seemaMauryaImage from '../../IMAGE/Seema Maurya1.jpg'
 
 const managementMembers = [
   {
-    image: abhishekhOjhaImage,
-    name: 'Abhishekh Ojha',
-    title: 'Director',
-    phone: '+91 98765 43210',
-    email:'jankalyancarefoundation@gmail...'
-  },
-  {
     image: seemaMauryaImage,
     name: 'Seema Maurya',
     title: 'Director',
-    phone: '+91 98765 43211',
+    email:'jankalyancarefoundation@gmail...'
+  },
+  {
+    image: abhishekhOjhaImage,
+    name: 'Abhishekh',
+    title: 'Director',
     email: 'jankalyancarefoundation@gmail...',
   },
   {
     image: '/jankalyan-logo.jpeg',
-    name: 'Rakhi',
+    name: 'Seema Maurya',
     title: 'Computer Trainer',
-    phone: '+91 98765 43212',
-    email: 'jankalyancarefoundation@gmail...',
+     email: 'jankalyancarefoundation@gmail...',
   },
   
   {
     image: abhishekhOjhaImage,
     name: 'Abhishekh Ojha',
     title: 'Member',
-    phone: '+91 98765 43214',
     email: 'jankalyancarefoundation@gmail...',
   },
   
@@ -104,13 +100,6 @@ export default function Manegment_team() {
                 </div>
 
                 <div className="mt-4 w-full space-y-2 text-sm text-white">
-                  <a
-                    href={`tel:${member.phone.replace(/\s/g, '')}`}
-                    className="flex w-full items-center justify-center gap-2 transition hover:text-green-100"
-                  >
-                    <FaPhoneAlt className="h-4 w-4 shrink-0 text-white" />
-                    <span>{member.phone}</span>
-                  </a>
                   <a
                     href={`mailto:${member.email}`}
                     className="flex w-full items-center justify-center gap-2 text-center transition hover:text-green-100"

@@ -16,6 +16,7 @@ import {
 } from 'react-icons/fa'
 // import heroImage1 from '../assets/abhishekh ojha.jpeg'
 import abhishekhOjhaImage from '../assets/abhishekh ojha.jpeg'
+import  abhiskheDirector from '../../IMAGE/Director.jpeg'
 import heroImage from '../../IMAGE/Seema Maurya1.jpg';
 // import heroImageTwo from '../../IMAGE/image_3.png';
 import heroImageThree from '../../IMAGE/image_4.png';
